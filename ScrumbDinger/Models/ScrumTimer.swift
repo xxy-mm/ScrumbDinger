@@ -97,6 +97,12 @@ final class ScrumTimer: ObservableObject {
             }
         }
     }
+    
+    nonisolated func skipSpeaker () {
+        Task { @MainActor in
+            changeToSpeaker(at: speakerIndex + 1)
+        }
+    }
 
     func reset(lengthInMinutes: Int, attendees: [DailyScrum.Attendee]) {
         lengthInMinites = lengthInMinutes

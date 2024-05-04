@@ -23,6 +23,7 @@
 		5974D81F2BD7F36500E7F453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5974D81E2BD7F36500E7F453 /* Assets.xcassets */; };
 		5974D8222BD7F36500E7F453 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5974D8212BD7F36500E7F453 /* Preview Assets.xcassets */; };
 		59F8D1842BE5CE5F007B1015 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8D1832BE5CE5F007B1015 /* ScrumTimer.swift */; };
+		59F8D1862BE5DC83007B1015 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8D1852BE5DC83007B1015 /* MeetingFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		5974D81E2BD7F36500E7F453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5974D8212BD7F36500E7F453 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		59F8D1832BE5CE5F007B1015 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
+		59F8D1852BE5DC83007B1015 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				5974D81A2BD7F36400E7F453 /* ScrumbDingerApp.swift */,
 				5974D81C2BD7F36400E7F453 /* MeetingView.swift */,
+				59F8D1852BE5DC83007B1015 /* MeetingFooterView.swift */,
 				594B73722BE137BE002865B0 /* MeetingHeaderView.swift */,
 				5907AE7E2BD8B0880009CC76 /* CardView.swift */,
 				594B73742BE13BA5002865B0 /* ScrumProgressViewStyle.swift */,
@@ -183,6 +186,7 @@
 			files = (
 				594B73712BE12981002865B0 /* ThemePicker.swift in Sources */,
 				594B73752BE13BA5002865B0 /* ScrumProgressViewStyle.swift in Sources */,
+				59F8D1862BE5DC83007B1015 /* MeetingFooterView.swift in Sources */,
 				59F8D1842BE5CE5F007B1015 /* ScrumTimer.swift in Sources */,
 				5907AE7D2BD8AF3B0009CC76 /* DailyScrum.swift in Sources */,
 				59404CAF2BE0757B009A602B /* DetailView.swift in Sources */,
