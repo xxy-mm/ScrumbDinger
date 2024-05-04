@@ -22,6 +22,8 @@
 		5974D81D2BD7F36400E7F453 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5974D81C2BD7F36400E7F453 /* MeetingView.swift */; };
 		5974D81F2BD7F36500E7F453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5974D81E2BD7F36500E7F453 /* Assets.xcassets */; };
 		5974D8222BD7F36500E7F453 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5974D8212BD7F36500E7F453 /* Preview Assets.xcassets */; };
+		59B7046E2BE5E553002500A5 /* ding.wav in Resources */ = {isa = PBXBuildFile; fileRef = 59B7046C2BE5E553002500A5 /* ding.wav */; };
+		59B704702BE5E6BB002500A5 /* AVPlayer+Ding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59B7046F2BE5E6BB002500A5 /* AVPlayer+Ding.swift */; };
 		59F8D1842BE5CE5F007B1015 /* ScrumTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8D1832BE5CE5F007B1015 /* ScrumTimer.swift */; };
 		59F8D1862BE5DC83007B1015 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F8D1852BE5DC83007B1015 /* MeetingFooterView.swift */; };
 /* End PBXBuildFile section */
@@ -43,6 +45,8 @@
 		5974D81C2BD7F36400E7F453 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		5974D81E2BD7F36500E7F453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5974D8212BD7F36500E7F453 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		59B7046C2BE5E553002500A5 /* ding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ding.wav; sourceTree = "<group>"; };
+		59B7046F2BE5E6BB002500A5 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		59F8D1832BE5CE5F007B1015 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		59F8D1852BE5DC83007B1015 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,6 +65,7 @@
 		5907AE792BD8AD6E0009CC76 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				59B7046F2BE5E6BB002500A5 /* AVPlayer+Ding.swift */,
 				5907AE7A2BD8AD950009CC76 /* Theme.swift */,
 				5907AE7C2BD8AF3B0009CC76 /* DailyScrum.swift */,
 				59F8D1832BE5CE5F007B1015 /* ScrumTimer.swift */,
@@ -100,6 +105,7 @@
 				5907AE802BD8D6E50009CC76 /* TrailingIconLabelStyle.swift */,
 				59404CB02BE0D6A6009A602B /* DetailEditView.swift */,
 				5907AE792BD8AD6E0009CC76 /* Models */,
+				59B7046D2BE5E553002500A5 /* Resources */,
 				5974D81E2BD7F36500E7F453 /* Assets.xcassets */,
 				5974D8202BD7F36500E7F453 /* Preview Content */,
 			);
@@ -112,6 +118,14 @@
 				5974D8212BD7F36500E7F453 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		59B7046D2BE5E553002500A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59B7046C2BE5E553002500A5 /* ding.wav */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59B7046E2BE5E553002500A5 /* ding.wav in Resources */,
 				5974D8222BD7F36500E7F453 /* Preview Assets.xcassets in Resources */,
 				5974D81F2BD7F36500E7F453 /* Assets.xcassets in Resources */,
 			);
@@ -199,6 +214,7 @@
 				5974D81B2BD7F36400E7F453 /* ScrumbDingerApp.swift in Sources */,
 				594B736F2BE1283B002865B0 /* ThemeView.swift in Sources */,
 				5907AE7F2BD8B0880009CC76 /* CardView.swift in Sources */,
+				59B704702BE5E6BB002500A5 /* AVPlayer+Ding.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
