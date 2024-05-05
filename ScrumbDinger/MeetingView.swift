@@ -28,16 +28,26 @@ struct MeetingView: View {
         .foregroundStyle(scrum.theme.accentColor)
         .navigationBarTitleDisplayMode(.inline)
         .onAppear {
-            scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-            scrumTimer.speakerChangedAction = {
-                player.seek(to: .zero)
-                player.play()
-            }
-            scrumTimer.startScrum()
+            startScrum()
         }
         .onDisappear {
-            scrumTimer.stopScrum()
+            endScrum()
         }
+    }
+    
+    private func startScrum() {
+        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.speakerChangedAction = {
+            player.seek(to: .zero)
+            player.play()
+        }
+        scrumTimer.startScrum()
+    }
+    
+    private func endScrum() {
+        scrumTimer.stopScrum()
+        let newHistory = History(attendees: scrum.attendees)
+        scrum.history.insert(newHistory, at: 0)
     }
 }
 
