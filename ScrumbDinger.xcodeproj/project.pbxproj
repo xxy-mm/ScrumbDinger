@@ -51,6 +51,7 @@
 		59B7046F2BE5E6BB002500A5 /* AVPlayer+Ding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVPlayer+Ding.swift"; sourceTree = "<group>"; };
 		59B704712BE5ECDF002500A5 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
 		59B704732BE67546002500A5 /* DetailEditSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditSheet.swift; sourceTree = "<group>"; };
+		59B704752BE7141E002500A5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		59F8D1832BE5CE5F007B1015 /* ScrumTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrumTimer.swift; sourceTree = "<group>"; };
 		59F8D1852BE5DC83007B1015 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +81,7 @@
 		5974D80E2BD7F36400E7F453 = {
 			isa = PBXGroup;
 			children = (
+				59B704752BE7141E002500A5 /* README.md */,
 				5974D8192BD7F36400E7F453 /* ScrumbDinger */,
 				5974D8182BD7F36400E7F453 /* Products */,
 			);
