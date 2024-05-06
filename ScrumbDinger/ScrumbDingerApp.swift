@@ -10,6 +10,8 @@ import SwiftUI
 @main
 struct ScrumbDingerApp: App {
     @StateObject private var store = ScrumStore()
+    @State private var errorWrapper: ErrorWrapper?
+
     var body: some Scene {
         WindowGroup {
             ScrumsView(scrums: $store.scrums) {
@@ -17,7 +19,7 @@ struct ScrumbDingerApp: App {
                     do {
                         try await store.save(scrum: store.scrums)
                     } catch {
-                        fatalError(error.localizedDescription)
+                        errorWrapper = ErrorWrapper(error: error, guidance: "Try again later.")
                     }
                 }
             }
@@ -25,9 +27,16 @@ struct ScrumbDingerApp: App {
                 do {
                     try await store.load()
                 } catch {
-                    fatalError(error.localizedDescription)
+                    errorWrapper = ErrorWrapper(error: error, guidance: "ScrumDinger will load sample data and continue.")
                 }
             }
+            .sheet(item: $errorWrapper) {
+                store.scrums = DailyScrum.sampleData
+            } content: { wrapper in
+                ErrorView(errorWrapper: wrapper)
+            }
+
+            
         }
     }
 }
